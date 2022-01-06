@@ -26,8 +26,7 @@ RUN echo "http://mirrors.aliyun.com/alpine/v3.8/main" > /etc/apk/repositories \
     && apk update upgrade \
     && apk add --no-cache unzip
 
-ARG VERSION
-ENV VERSION $VERSION
+ENV VERSION 1.9.2
 
 COPY apollo-adminservice-${VERSION}-github.zip /apollo-adminservice/apollo-adminservice-${VERSION}-github.zip
 
